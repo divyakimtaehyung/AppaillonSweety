@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Parallel TestCases" parallel="tests">
+                <test verbose="1" name="AppzillonWeb" group-by-instances="true">
+                    <parameter name="platform" value="ios"/>
+                    <parameter name="application" value="customer"/>
+                    <parameter name="language" value="english"/>
+                    <classes>
+        <!--                <class name="com.iexceed.uiframework.runners.TestRunner"/>-->
+                        <class name="com.iexceed.uiframework.runners.TestRunnerCustomer"/>
+                    </classes>
+                </test>
+<!--    <test name="Android" parallel="classes">-->
+<!--        <parameter name="platform" value="Android"/>-->
+<!--        <parameter name="application" value="bank"/>-->
+<!--        <parameter name="language" value="arabic"/>-->
+<!--        <classes>-->
+<!--            <class name="com.iexceed.uiframework.runners.TestRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <!--    <test name="IOS" parallel="classes">-->
+    <!--        <parameter name="browserName" value="IOS"/>-->
+    <!--        <parameter name="application" value="bank"/>-->
+    <!--        <classes>-->
+    <!--            <class name="com.iexceed.uiframework.runners.TestRunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+</suite>
